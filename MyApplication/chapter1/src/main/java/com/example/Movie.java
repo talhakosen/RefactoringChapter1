@@ -1,4 +1,4 @@
-package refactoring.tkosen.com.refactoring.chapter1;
+package com.example;
 
 /**
  * Created by tkosen on 12/03/2015.

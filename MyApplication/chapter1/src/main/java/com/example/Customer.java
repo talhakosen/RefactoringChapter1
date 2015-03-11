@@ -1,4 +1,4 @@
-package refactoring.tkosen.com.refactoring.chapter1;
+package com.example;
 
 import java.util.Enumeration;
 import java.util.Vector;
