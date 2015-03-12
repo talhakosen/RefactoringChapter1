@@ -12,12 +12,11 @@ public class Rental {
         this._daysRented = _daysRented;
     }
 
-    public Movie getMovie() {
-        return _movie;
-    }
-
-    public int getDaysRented() {
-        return _daysRented;
+    public int getFrequentRenderPoints() {
+        if (getMovie().getPriceCode() == Movie.NEW_RELASE && getDaysRented() > 1)
+            return 2;
+        else
+            return  1;
     }
 
     public double getCharge() {
@@ -38,5 +37,13 @@ public class Rental {
                 break;
         }
         return result;
+    }
+
+    public Movie getMovie() {
+        return _movie;
+    }
+
+    public int getDaysRented() {
+        return _daysRented;
     }
 }
