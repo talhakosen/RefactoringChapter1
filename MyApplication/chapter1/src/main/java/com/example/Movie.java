@@ -37,6 +37,13 @@ public class Movie {
         return result;
     }
 
+    public int getFrequentRenderPoints(int dayRented) {
+        if (getPriceCode() == Movie.NEW_RELASE && dayRented > 1)
+            return 2;
+        else
+            return  1;
+    }
+
     public String getTitle() {
         return _title;
     }
