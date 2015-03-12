@@ -39,7 +39,6 @@ public class Customer {
         return result;
     }
 
-
     public double getTotalCharge(){
         double result=0.0;
         Enumeration rentals = _rentals.elements();
